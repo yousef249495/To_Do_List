@@ -1,0 +1,86 @@
+* {
+    border-radius: 10px;
+}
+
+html {
+    --main-cl: #eee;
+    --button-cl: #6a55fd;
+    --background-cl: #fff;
+}
+
+body {
+    background-color: var(--background-cl);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-block: 100px;
+}
+
+.form {
+    width: 70%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-cl);
+    padding-inline: 40px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.form [type='text'] {
+    height: 50px;
+    width: 80%;
+    padding-inline: 15px;
+    background-color: var(--background-cl);
+}
+
+.form button,
+.form [type='submit'] {
+    background-color: var(--button-cl);
+    color: White;
+    height: 50px;
+    padding: 1px 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tasks {
+    background-color: var(--main-cl);
+    width: 60%;
+    min-height: 100px;
+    margin-top: 50px;
+    padding-inline: 5%;
+}
+
+.tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    margin-block: 30px;
+    background-color: var(--background-cl);
+    transition: all 0.3s;
+}
+
+.tasks .task button {
+    height: fit-content;
+    padding: 10px;
+    background-color: var(--button-cl);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.done {
+    opacity: 0.5;
+}
